@@ -1,0 +1,167 @@
+body {
+    background-color: cornflowerblue;
+}
+
+header {
+    color: black;
+    border-bottom: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display:  flex;
+    flex-direction: row;
+    text-transform: uppercase;
+}
+
+li:not(:last-of-type) {
+    margin-right: 1rem;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.usuarios {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 4rem;
+    margin-bottom: auto;
+
+}
+
+.noticias {
+    width: 60%;
+    margin: auto ;
+    padding: 2rem 4rem
+}
+
+.noticia {
+    margin-bottom: 5rem;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.forma-noticia {
+    margin: auto;
+}
+
+.info span:not(:last-of-type) {
+    margin-right: 2rem;
+}
+.titulo {
+    text-transform: uppercase;
+}
+
+.info {
+    text-align: right;
+    font-size: .7rem;
+}
+
+.contenido {
+    font-size: 1.5rem;
+}
+
+.form-item:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    margin-left: 2rem;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='date'],
+input[type='email'],
+input[type='password'] {
+    margin-top: .5rem;
+    width: 30rem;
+    height: 2rem;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+#editor_contenido {
+    margin-top: .5rem;
+    width: 30rem;
+    height: 10rem;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+.buttons-horizontal-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-horizontal-group form {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: .5rem .7rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.button-green {
+    background-color: darkseagreen;
+}
+
+.button-blue {
+    background-color: blueviolet;
+}
+
+.button-red {
+    background-color: palevioletred;
+}
+
+.button-small {
+    transform: scale(.6);
+}
+
+.button a {
+    color: black;
+    text-decoration: none;
+}
+
+.button a:active {
+    color: black;
+    text-underline: none;
+}
+
+.usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.usuarios p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.usuario:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+
