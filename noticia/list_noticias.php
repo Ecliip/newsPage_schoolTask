@@ -26,11 +26,11 @@ foreach ($conn->query($sql) as $row) {
    <p class='contenido'>" . $row['contenido'] . "</p>
    <form >
         
-        <input type='button' value='Me gusta: ".$row['likes'] ."'  onclick='showLikes($row[id])'>
+        <input type='button' value='Me gusta: ".$row['likes'] . "'  onclick='incrementarLikes($row[id], $row[titulo])'>
    </form>
    
     <script>
-        function showLikes(id) {
+        function incrementarLikes(id, titulo) {
             console.log(id);
            const arrLike = event.target.value.split(' ');
            arrLike[2] = +arrLike[2] + 1;
@@ -43,7 +43,7 @@ foreach ($conn->query($sql) as $row) {
             console.log(this.response);
             }
             };
-        xmlhttp.open('POST','/ilerna/noticia/incrementarLikes.php?id='+id+'&likes='+likes, true);
+        xmlhttp.open('POST','/ilerna/noticia/incrementarLikes.php?id='+id+'&likes='+likes+'&titulo='+titulo, true);
         xmlhttp.send();
         
         

@@ -52,5 +52,4 @@
 
 <?php
 // TODO: Create Success screen when we manipulate data
-// TODO: store likes in cookies.
 ?>
