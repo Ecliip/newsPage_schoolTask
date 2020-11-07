@@ -17,6 +17,7 @@ nav ul {
     display:  flex;
     flex-direction: row;
     text-transform: uppercase;
+    align-items: center;
 }
 
 li:not(:last-of-type) {

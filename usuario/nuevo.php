@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 $servername = 'localhost';
 $username = 'root';
@@ -19,7 +18,7 @@ $sql = "select * from `usuarios` where `id` = '$_GET[id]'";
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
@@ -61,12 +60,15 @@ $sql = "select * from `usuarios` where `id` = '$_GET[id]'";
             <p>
                 <span class='usuario_enunciado'>Nombre: </span> 
                 <span class='usuario_data'>". $row['genero'] ."</span>
-            </p>
-            <form action='?id=". $row['id'] ."&redactar=true' method='post'>
+            </p>";
+
+        if (isset($_SESSION['nombre'])) {
+           echo "<form action='?id=" . $row['id'] . "&redactar=true' method='post'>
                 <input type='submit' class='button button-blue' value='Modificar datos'>
-            </form>
+            </form>";
+        }
             
-        </div>";
+       echo "</div>";
 
         if(isset($_GET['redactar'])) {
             foreach($conn->query($sql) as $row) {

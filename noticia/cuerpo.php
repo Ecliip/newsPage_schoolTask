@@ -22,10 +22,13 @@ foreach ($conn->query($sql) as $row) {
                 <p class='contenido'>" . $row['contenido'] . "</p>
                 <form action='noticia/llamada.php?article=" . $row['id'] . "' method='post'>
                     <input type='submit' class='button button-green' value='Abrir'>
-                </form>
-                <input type='button' class='button button-red' value='Eliminar' onclick='eliminarNoticia($row[id])'>
-                
-                <script>
+                </form>";
+                if(isset($_SESSION['nombre'])) {
+                    echo "<input type='button' class='button button-red' value='Eliminar' onclick='eliminarNoticia($row[id])'>";
+                }
+
+
+            echo "<script>
                     function eliminarNoticia(id) {
                         document.getElementById('noticia='+id).remove();
                         
@@ -37,9 +40,7 @@ foreach ($conn->query($sql) as $row) {
                         }
                         xmlhttp.open('POST', '/ilerna/noticia/eliminar_noticia.php?id='+id, true);
                         xmlhttp.send();
-                            
                         }
-                   
                 </script>
             </div>";
 }

@@ -18,12 +18,14 @@ foreach ($conn->query($sql) as $row) {
                             <div class='buttons-horizontal-group'>
                                 <form action='/ilerna/usuario/nuevo.php?id=" . $row['id'] . "' method='post'>
                                     <input type='submit' class='button-blue button button-small' value='Abrir'>
-                                </form>
-                                <input 
+                                </form>";
+                                if (isset($_SESSION['nombre'])) {
+                                echo "<input 
                                     type='button' 
                                     onclick='eliminarUsuario($row[id])' 
-                                    class='button-red button button-small' value='Eliminar'>
-                                <script>
+                                    class='button-red button button-small' value='Eliminar'>";
+                                }
+                               echo "<script>
                                     function eliminarUsuario(id) {
                                         const element = document.getElementById('usuario='+id).remove();
                                         
