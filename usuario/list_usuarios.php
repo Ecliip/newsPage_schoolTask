@@ -16,7 +16,7 @@ foreach ($conn->query($sql) as $row) {
     echo "<div class='usuario' id='usuario=". $row['id'] ."'>
                             <p>" . $row['nombre'] . "</p>
                             <div class='buttons-horizontal-group'>
-                                <form action='/ilerna/usuario/nuevo.php?id=" . $row['id'] . "' method='post'>
+                                <form action='/ilerna/usuario/user.php?id=" . $row['id'] . "' method='post'>
                                     <input type='submit' class='button-blue button button-small' value='Abrir'>
                                 </form>";
                                 if (isset($_SESSION['nombre'])) {

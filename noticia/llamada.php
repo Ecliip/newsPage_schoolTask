@@ -1,15 +1,6 @@
 <?php
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$dbName = 'm07';
-$conn = new mysqli($servername, $username, $password, $dbName);
-
-if ($conn->connect_error) {
-    die('Error de conexion: ' . $conn->connect_errno);
-} else
-
-//include '../compartido/funciones_bd.php';
+include '../conexion.php';
+global $conn;
 
 $sql = "select * from `noticias` where `id` = '$_GET[article]'";
 
@@ -26,7 +17,6 @@ $sql = "select * from `noticias` where `id` = '$_GET[article]'";
 <?php include '../compartido/header.php' ?>
 
 <main>
-
     <?php
     foreach($conn->query($sql) as $row) {
         echo "<div class='noticia'>

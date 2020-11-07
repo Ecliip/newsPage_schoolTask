@@ -1,15 +1,7 @@
 <?php
 
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$dbName = 'm07';
-$conn = new mysqli($servername, $username, $password, $dbName);
-
-if ($conn->connect_error) {
-    die('Error de conexion: ' . $conn->connect_errno);
-} else
-
+include '../conexion.php';
+global $conn;
 $sql = "select * from `usuarios` where `id` = '$_GET[id]'";
 
 ?>
@@ -72,7 +64,6 @@ $sql = "select * from `usuarios` where `id` = '$_GET[id]'";
 
         if(isset($_GET['redactar'])) {
             foreach($conn->query($sql) as $row) {
-//                $_SESSION['user_id'] = $row['id'];
                 echo "<form action='modificar.php?id=". $row['id'] ."' method='post' class='forma-noticia'>
                     <div class='form-item'>
             <label for='nombre'>Nombre: </label><br>
@@ -120,6 +111,8 @@ $sql = "select * from `usuarios` where `id` = '$_GET[id]'";
         }
     }
     ?>
+
+
 
 </main>
 </body>
