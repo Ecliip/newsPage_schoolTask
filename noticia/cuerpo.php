@@ -1,6 +1,15 @@
 <?php
+$servername = 'localhost';
+$username = 'root';
+$password = '';
+$dbName = 'm07';
+$conn = new mysqli($servername, $username, $password, $dbName);
+
+if ($conn->connect_error) {
+    die('Error de conexion: ' . $conn->connect_errno);
+}
+
 $sql = 'select * from `noticias` order by `hora_creacion` desc limit 5';
-global $conn;
 foreach ($conn->query($sql) as $row) {
     echo    "<div class='noticia' id='noticia=". $row['id'] ."'>
                 <h2 class='titulo'>" . $row['titulo'] . "</h2>

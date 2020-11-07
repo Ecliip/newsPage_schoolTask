@@ -1,7 +1,13 @@
 <?php
+$servername = 'localhost';
+$username = 'root';
+$password = '';
+$dbName = 'm07';
+$conn = new mysqli($servername, $username, $password, $dbName);
 
-include '../conexion.php';
-global $conn;
+if ($conn->connect_error) {
+    die('Error de conexion: ' . $conn->connect_errno);
+}
 $sql = "select * from `usuarios` where `id` = '$_GET[id]'";
 
 ?>

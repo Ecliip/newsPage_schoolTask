@@ -7,14 +7,11 @@ $password = '';
 $dbName = 'm07';
 $conn = new mysqli($servername, $username, $password, $dbName);
 
-
-
 if ($conn->connect_error) {
     die('Error de conexion: ' . $conn->connect_errno);
 }
 
 $sql = 'select * from `noticias` order by `hora_creacion` desc';
-
 
 foreach ($conn->query($sql) as $row) {
     $_SESSION['id'] = $row['id'];

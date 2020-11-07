@@ -1,8 +1,6 @@
 <?php
 include '../compartido/funciones_bd.php';
-
 addUser();
-
 header("Location: /ilerna");
 exit;
 
