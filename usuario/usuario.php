@@ -16,13 +16,13 @@ $sql = "select * from `usuarios` where `id` = '$_GET[id]'";
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-<?php include '../compartido/header.php' ?>
+<?php include '../compartido/cabecera.php' ?>
 
-<main>
+<main class="main-secondary">
 
     <?php
     foreach($conn->query($sql) as $row) {

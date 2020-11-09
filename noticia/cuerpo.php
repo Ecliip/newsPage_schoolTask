@@ -17,13 +17,15 @@ foreach ($conn->query($sql) as $row) {
                             <span>" . date('d/m/Y', strtotime($row['hora_creacion'])) . "</span><span>" . $row['autor'] . "</span>
                 </div>
                 <p class='contenido'>" . $row['contenido'] . "</p>
+                <div class='buttons'>
                 <form action='noticia/llamada.php?article=" . $row['id'] . "' method='post'>
                     <input type='submit' class='button button-green' value='Abrir'>
                 </form>";
                 if(isset($_SESSION['nombre'])) {
                     echo "<input type='button' class='button button-red' value='Eliminar' onclick='eliminarNoticia($row[id])'>";
                 }
-            echo "<script>
+                echo "</div>
+             <script>
                     function eliminarNoticia(id) {
                         document.getElementById('noticia='+id).remove();
                         

@@ -25,7 +25,6 @@ foreach ($conn->query($sql) as $row) {
         
         <input type='button' value='Me gusta: ".$row['likes'] . "'  onclick='incrementarLikes($row[id])'>
    </form>
-   
     <script>
         function incrementarLikes(id) {
             console.log(id);
@@ -42,7 +41,6 @@ foreach ($conn->query($sql) as $row) {
             };
         xmlhttp.open('POST','/ilerna/noticia/incrementarLikes.php?id='+id+'&likes='+likes, true);
         xmlhttp.send();
-        
         }
     </script>
    </div>";

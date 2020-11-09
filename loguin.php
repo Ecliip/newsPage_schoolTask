@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<?php include 'compartido/header.php' ?>
+<?php include 'compartido/cabecera.php' ?>
 
 <div class="box">
     <form method="GET" action="/ilerna/usuario/auth.php">
@@ -28,11 +28,9 @@
         function getEmail(theEmail) {
             email = theEmail;
         }
-
         function getPassword(thePassword) {
             password = thePassword;
         }
-
         function iniciarSesion() {
             // TODO: this function is not called.
             const xmlhttp = new XMLHttpRequest();
@@ -51,5 +49,4 @@
 </html>
 
 <?php
-// TODO: Create Success screen when we manipulate data
 ?>

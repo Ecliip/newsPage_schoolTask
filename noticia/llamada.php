@@ -17,11 +17,11 @@ $sql = "select * from `noticias` where `id` = '$_GET[article]'";
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-<?php include '../compartido/header.php' ?>
+<?php include '../compartido/cabecera.php' ?>
 
 <main>
     <?php
@@ -42,7 +42,7 @@ $sql = "select * from `noticias` where `id` = '$_GET[article]'";
         if(isset($_GET['redactar'])) {
             foreach($conn->query($sql) as $row) {
                 $_SESSION['noticia_id'] = $row['id'];
-                echo "<form action='modificar_noticia.php' method='post' class='forma-noticia'>
+                echo "<form action='modificar_noticia.php' method='post' class='formulario'>
                     <div class='form-item'>
                         <label for='titulo'>Titulo: </label><br>
                         <input required type='text' name='titulo' id='titulo' value='" . $row['titulo'] . "'>

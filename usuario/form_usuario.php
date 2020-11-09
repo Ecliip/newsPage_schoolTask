@@ -1,16 +1,26 @@
+<?php
+    if (isset($_POST['nombre'])) {
+        include '../compartido/funciones_bd.php';
+        addUser();
+        header("Location: /ilerna");
+        exit;
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-<?php include '../compartido/header.php' ?>
+<?php include '../compartido/cabecera.php' ?>
 
-<main>
-    <form class="form" action="submit_form.php" method="post">
+<main class="main-secondary">
+    <form class="formulario" action="form_usuario.php" method="post">
         <div class="form-item">
             <label for="nombre">Nombre: </label><br>
             <input required type="text" name="nombre" id="nombre" maxlength="40">

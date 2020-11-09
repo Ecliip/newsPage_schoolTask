@@ -51,7 +51,7 @@ li:not(:last-of-type) {
     border-radius: 5px;
 }
 
-.forma-noticia {
+.formulario {
     margin: auto;
 }
 
@@ -106,7 +106,7 @@ input[type='password'] {
     justify-content: center;
 }
 
-.buttons-horizontal-group form {
+.buttons-horizontal-group formulari {
     display: flex;
     justify-content: center;
 }
@@ -117,6 +117,15 @@ input[type='password'] {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
+}
+
+.formulario .button {
+    margin-top: 2rem;
+}
+
+.noticias .buttons {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .button-green {
@@ -143,6 +152,16 @@ input[type='password'] {
 .button a:active {
     color: black;
     text-underline: none;
+}
+
+.main-secondary {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+}
+
+.usuario-view .formulario {
+    margin: 0;
 }
 
 .usuario {
