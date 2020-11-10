@@ -7,10 +7,10 @@
 .header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
     color: black;
-    border-bottom: black 1px solid;
+    border-bottom: darkslategrey 2px solid;
     background-color: white;
+    box-shadow: darkslategrey .5rem .5rem 1rem;
 }
 
 .nav-top-level {
@@ -73,19 +73,15 @@ li:not(:last-of-type) {
     flex-direction: row;
 }
 
-
-
-
-
-
+.usuarios {
+    display: flex;
+    justify-content: center;
+    background-color: darkseagreen;
+    border-right: darkslategrey 2px solid;
+}
 /* NOT ORDERED */
-
-
-
-
-
 body {
-    background-color: cornflowerblue;
+    background-color: #fff3e3;
 }
 
 nav ul {
@@ -93,13 +89,7 @@ nav ul {
     text-transform: uppercase;
 }
 
-.usuarios {
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 4rem;
-    margin-bottom: auto;
-}
+
 
 .noticias {
     width: 60%;
@@ -112,6 +102,7 @@ nav ul {
     background-color: white;
     padding: 1rem 2rem;
     border-radius: 5px;
+    box-shadow: darkslategrey .5rem .5rem 1rem;
 }
 
 .formulario {
@@ -197,7 +188,7 @@ input[type='password'] {
 }
 
 .button-blue {
-    background-color: blueviolet;
+    background-color: dodgerblue;
 }
 
 .button-red {
