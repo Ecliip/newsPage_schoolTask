@@ -13,13 +13,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
 <?php include '../compartido/cabecera.php' ?>
 
-<main class="main-secondary">
+<main class="global-wrapper-row">
     <form class="formulario" action="form_usuario.php" method="post">
         <div class="form-item">
             <label for="nombre">Nombre: </label><br>

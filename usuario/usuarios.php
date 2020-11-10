@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
 <?php include '../compartido/cabecera.php' ?>
 
-<div class="usuario-view">
+<div class="global-wrapper-row">
     <aside class="usuarios">
         <?php include 'list_usuarios.php'?>
     </aside>

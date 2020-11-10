@@ -1,7 +1,7 @@
 <?php
 session_start();
 echo "
-<header>
+<header class='header'>
     <nav>
         <h1>Ilerna M07</h1>";
         if(isset($_SESSION['nombre'])) {

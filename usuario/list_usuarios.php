@@ -10,9 +10,6 @@ if ($conn->connect_error) {
     die('Error de conexion: ' . $conn->connect_errno);
 }
 
-
-
-
 echo "<div class='list_usuarios'>";
 foreach ($conn->query($sql) as $row) {
     echo "<div class='usuario' id='usuario=". $row['id'] ."'>
