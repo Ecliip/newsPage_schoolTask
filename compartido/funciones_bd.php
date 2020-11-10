@@ -109,7 +109,7 @@ function loggin() {
         $row = $result->fetch_array(MYSQLI_NUM);
         $result->close();
         session_start();
-        $_SESSION['nombre'] = $row[2];
+        $_SESSION['nombre'] = $row[1];
         $_SESSION['id_usuario'] = $row[0];
 //        print_r($row);
 
@@ -188,8 +188,3 @@ function deleteArticle() {
         echo("Error " . $sql . "<br>" . $conn->error);
     }
 }
-
-function getArticles() {
-
-}
-

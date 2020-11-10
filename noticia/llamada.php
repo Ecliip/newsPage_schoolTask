@@ -26,13 +26,13 @@ $sql = "select * from `noticias` where `id` = '$_GET[article]'";
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
 <?php include '../compartido/cabecera.php' ?>
 
-<main class="global-wrapper-row">
+<main class="global-wrapper-col">
     <?php
     foreach($conn->query($sql) as $row) {
         echo "<div class='noticia'>

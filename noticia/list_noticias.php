@@ -1,5 +1,4 @@
 <?php
-
 include '../compartido/funciones_bd.php';
 $servername = 'localhost';
 $username = 'root';
@@ -22,7 +21,6 @@ foreach ($conn->query($sql) as $row) {
     </div>
    <p class='contenido'>" . $row['contenido'] . "</p>
    <form >
-        
         <input type='button' value='Me gusta: ".$row['likes'] . "'  onclick='incrementarLikes($row[id])'>
    </form>
     <script>

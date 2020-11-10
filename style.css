@@ -77,6 +77,12 @@ body {
     flex-direction: row;
 }
 
+.global-wrapper-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .usuarios {
     display: flex;
     justify-content: center;
@@ -89,7 +95,6 @@ nav ul {
     text-transform: uppercase;
 }
 
-
 .noticia {
     margin-bottom: 5rem;
     background-color: white;
@@ -99,7 +104,6 @@ nav ul {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .noticia:first-of-type {
@@ -113,6 +117,10 @@ nav ul {
 }
 
 .noticia input[type=button] {
+    margin-left: 2rem;
+}
+
+.noticia input[type=submit] {
     margin-left: 2rem;
 }
 
@@ -239,6 +247,7 @@ input[type='password'] {
 
 .usuario_completo {
     margin-top: 1rem;
+    margin-left: 5rem;
 }
 
 .usuario-info {
