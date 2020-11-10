@@ -9,7 +9,7 @@
 
 <?php include 'compartido/cabecera.php' ?>
 
-<div class="box">
+<div class="usuario-view">
     <form method="GET" action="/ilerna/usuario/auth.php">
         <div class="form-item">
             <label for="email">Email: </label><br>

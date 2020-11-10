@@ -11,12 +11,11 @@
 
 <div class="usuario-view">
     <aside class="usuarios">
-        <?php include 'list_usuarios.php'?>
+        <?php include '../usuario/list_usuarios.php' ?>
     </aside>
+    <main class="noticias">
+        <?php include 'list_noticias.php' ?>
+    </main>
 </div>
-
 </body>
 </html>
-
-<?php
-?>

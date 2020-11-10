@@ -1,6 +1,6 @@
 <?php
 
-include 'compartido/funciones_bd.php';
+include '../compartido/funciones_bd.php';
 $servername = 'localhost';
 $username = 'root';
 $password = '';

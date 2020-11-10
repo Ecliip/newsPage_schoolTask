@@ -9,7 +9,7 @@
 
 <?php include 'compartido/cabecera.php' ?>
 
-<div class="box">
+<div class="usuario-view">
     <aside class="usuarios">
         <?php include 'usuario/list_usuarios.php'?>
     </aside>
