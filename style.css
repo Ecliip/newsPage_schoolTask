@@ -35,7 +35,6 @@ li:not(:last-of-type) {
     justify-content: center;
     padding: 2rem 4rem;
     margin-bottom: auto;
-
 }
 
 .noticias {
@@ -58,6 +57,7 @@ li:not(:last-of-type) {
 .info span:not(:last-of-type) {
     margin-right: 2rem;
 }
+
 .titulo {
     text-transform: uppercase;
 }

@@ -24,21 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ace910f5-f4e8-4695-a1a6-4231bd45c075" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compartido/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loguin.php" beforeDir="false" afterPath="$PROJECT_DIR$/loguin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticia/cuerpo.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticia/cuerpo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticia/list_noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticia/list_noticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticia/llamada.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticia/llamada.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noticia/agregar_noticia.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/noticia/nueva.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticia/nueva.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/eliminar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/form_usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/form_usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/list_usuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/list_usuarios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/submit_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/usuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/usuarios.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +87,8 @@
       <workItem from="1604482493321" duration="2841000" />
       <workItem from="1604505455312" duration="20626000" />
       <workItem from="1604562567208" duration="68319000" />
-      <workItem from="1604953956400" duration="3165000" />
+      <workItem from="1604953956400" duration="3490000" />
+      <workItem from="1604998394366" duration="697000" />
     </task>
     <servers />
   </component>
@@ -116,6 +105,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="194" y="253" key="#SQL_Dialects" timestamp="1604566146393">

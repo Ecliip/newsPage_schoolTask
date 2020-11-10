@@ -1,3 +1,13 @@
+<?php
+ if (isset($_POST['titulo'])) {
+     include '../compartido/funciones_bd.php';
+
+     addArticle();
+     header("Location: /ilerna");
+     exit;
+ }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +20,7 @@
 <?php include '../compartido/cabecera.php' ?>
 
 <main class="main-secondary">
-    <form action='agregar_noticia.php' method='post' class='forma-noticia'>
+    <form action='<?php $_SERVER['PHP_SELF']?>' method='post' class='forma-noticia'>
         <div class='form-item'>
             <label for='titulo'>Titulo: </label><br>
             <input required type='text' name='titulo' id='titulo' maxlength="500">
