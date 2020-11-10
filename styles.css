@@ -67,6 +67,10 @@ li:not(:last-of-type) {
     border-right: gray 1px solid;
 }
 
+body {
+    background-color: #dae2d9;
+}
+
 .global-wrapper-row {
     display: flex;
     justify-content: space-evenly;
@@ -78,10 +82,6 @@ li:not(:last-of-type) {
     justify-content: center;
     background-color: darkseagreen;
     border-right: darkslategrey 2px solid;
-}
-/* NOT ORDERED */
-body {
-    background-color: #dae2d9;
 }
 
 nav ul {
@@ -164,24 +164,12 @@ input[type='password'] {
     padding: .5rem 1rem;
 }
 
-#editor_contenido {
+#textarea_editor {
     margin-top: .5rem;
     width: 30rem;
     height: 10rem;
     border-radius: 5px;
     padding: .5rem 1rem;
-}
-
-.buttons-horizontal-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.buttons-horizontal-group formulari {
-    display: flex;
-    justify-content: center;
 }
 
 .button {
@@ -208,7 +196,6 @@ input[type='password'] {
 
 .button-blue {
     background-color: darkslategrey;
-
 }
 
 .button-red {
@@ -245,8 +232,6 @@ input[type='password'] {
 .usuario:first-of-type {
     margin-top: 1rem;
 }
-
-
 
 .usuario:not(:last-of-type) {
     margin-bottom: 2rem;

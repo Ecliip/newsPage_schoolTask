@@ -58,7 +58,7 @@ $sql = "select * from `noticias` where `id` = '$_GET[article]'";
                         </div>
                         <div class='form-item'>
                             <label for='contenido'>Contenido: </label><br>
-                            <textarea type='text' required name='contenido' id='editor_contenido'>" . $row['contenido'] . "</textarea>
+                            <textarea type='text' required name='contenido' id='textarea_editor'>" . $row['contenido'] . "</textarea>
                         </div>
                         <input class='button button-blue' type='submit' value='Modificar'>
                     </form>";

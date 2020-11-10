@@ -27,7 +27,7 @@
         </div>
         <div class='form-item'>
             <label for='contenido'>Contenido: </label><br>
-            <textarea type='text' required name='contenido' id='editor_contenido' maxlength="1000"></textarea>
+            <textarea type='text' required name='contenido' id='textarea_editor' maxlength="1000"></textarea>
         </div>
         <div class='form-item'>
             <label for='autor'>Autor: </label><br>
