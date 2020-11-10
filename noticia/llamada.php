@@ -1,4 +1,13 @@
 <?php
+if (isset($_POST['titulo'])) {
+    session_start();
+
+    include '../compartido/funciones_bd.php';
+    updateArticle();
+    header('Location: /ilerna');
+    exit;
+}
+
 $servername = 'localhost';
 $username = 'root';
 $password = '';
@@ -33,28 +42,28 @@ $sql = "select * from `noticias` where `id` = '$_GET[article]'";
             </div>
             <p class='contenido'>" . $row['contenido'] . "</p>";
 
-        if(isset($_SESSION['nombre'])) {
-            echo "<form action='?article=" . $row['id'] . "&redactar=true' method='post'>
-                <input type='submit' class='button button-green' value='Redactar'>
-            </form>";
-        }
-          echo "</div>";
-        if(isset($_GET['redactar'])) {
-            foreach($conn->query($sql) as $row) {
-                $_SESSION['noticia_id'] = $row['id'];
-                echo "<form action='modificar_noticia.php' method='post' class='formulario'>
-                    <div class='form-item'>
-                        <label for='titulo'>Titulo: </label><br>
-                        <input required type='text' name='titulo' id='titulo' value='" . $row['titulo'] . "'>
-                    </div>
-                    <div class='form-item'>
-                        <label for='contenido'>Contenido: </label><br>
-                        <textarea type='text' required name='contenido' id='editor_contenido'>" . $row['contenido'] . "</textarea>
-                    </div>
-                    <input class='button button-blue' type='submit' value='Modificar'>
+            if(isset($_SESSION['nombre'])) {
+                echo "<form action='?article=" . $row['id'] . "&redactar=true' method='post'>
+                    <input type='submit' class='button button-green' value='Redactar'>
                 </form>";
             }
-        }
+            echo "</div>";
+            if(isset($_GET['redactar'])) {
+                foreach($conn->query($sql) as $row) {
+                $_SESSION['noticia_id'] = $row['id'];
+                    echo "<form action='/ilerna/noticia/llamada.php' method='post' class='formulario'>
+                        <div class='form-item'>
+                            <label for='titulo'>Titulo: </label><br>
+                            <input required type='text' name='titulo' id='titulo' value='" . $row['titulo'] . "'>
+                        </div>
+                        <div class='form-item'>
+                            <label for='contenido'>Contenido: </label><br>
+                            <textarea type='text' required name='contenido' id='editor_contenido'>" . $row['contenido'] . "</textarea>
+                        </div>
+                        <input class='button button-blue' type='submit' value='Modificar'>
+                    </form>";
+                }
+            }
     }
     ?>
 

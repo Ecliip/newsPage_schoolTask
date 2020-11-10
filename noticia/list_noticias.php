@@ -27,16 +27,13 @@ foreach ($conn->query($sql) as $row) {
    </form>
     <script>
         function incrementarLikes(id) {
-            console.log(id);
-           const arrLike = event.target.value.split(' ');
-           arrLike[2] = +arrLike[2] + 1;
-           const likes= +arrLike[2];
-           event.target.value = arrLike.join(' ');
-//           
-          var xmlhttp = new XMLHttpRequest();
-          xmlhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            console.log(this.response);
+            const arrLike = event.target.value.split(' ');
+            arrLike[2] = +arrLike[2] + 1;
+            const likes= +arrLike[2];
+            event.target.value = arrLike.join(' ');
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
             }
             };
         xmlhttp.open('POST','/ilerna/noticia/incrementarLikes.php?id='+id+'&likes='+likes, true);

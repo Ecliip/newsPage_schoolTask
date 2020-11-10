@@ -19,7 +19,4 @@
 </html>
 
 <?php
-// TODO: Implement adding likes on noticias.
-// TODO: Create Success screen when we manipulate data
-// TODO: store likes in cookies.
 ?>

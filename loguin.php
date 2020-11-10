@@ -32,7 +32,6 @@
             password = thePassword;
         }
         function iniciarSesion() {
-            // TODO: this function is not called.
             const xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = () => {
                 if (this.status == 200 && this.readyState == 4) {

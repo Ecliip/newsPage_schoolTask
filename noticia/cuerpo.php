@@ -41,9 +41,3 @@ foreach ($conn->query($sql) as $row) {
                 </script>
             </div>";
 }
-
-
-
-
-
-// TODO: conexion was removed from this file. in case is fail

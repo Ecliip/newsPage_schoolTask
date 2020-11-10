@@ -22,6 +22,4 @@
 </html>
 
 <?php
-// TODO: Create Success screen when we manipulate data
-// TODO: Store likes in cookies.
 ?>
