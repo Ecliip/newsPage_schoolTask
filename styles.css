@@ -81,7 +81,7 @@ li:not(:last-of-type) {
 }
 /* NOT ORDERED */
 body {
-    background-color: #fff3e3;
+    background-color: #dae2d9;
 }
 
 nav ul {
@@ -90,23 +90,35 @@ nav ul {
 }
 
 
-
-.noticias {
-    width: 60%;
-    margin: auto ;
-    padding: 2rem 4rem
-}
-
 .noticia {
     margin-bottom: 5rem;
     background-color: white;
-    padding: 1rem 2rem;
     border-radius: 5px;
     box-shadow: darkslategrey .5rem .5rem 1rem;
+    padding-bottom: 1rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.noticia:first-of-type {
+    margin-top: 2rem;
+}
+
+.noticia h2 {
+    background-color: darkslategrey;
+    color: white;
+    padding: 1rem 1.5rem .5rem;
+}
+
+.noticia input[type=button] {
+    margin-left: 2rem;
 }
 
 .formulario {
-    margin: auto;
+    margin: 2rem auto;
+
 }
 
 .info span:not(:last-of-type) {
@@ -120,10 +132,16 @@ nav ul {
 .info {
     text-align: right;
     font-size: .7rem;
+    margin: 0 0 1rem;
+    background-color: #b3cab3;
+    padding: .2rem 1rem;
+    color: darkslategrey;
 }
 
 .contenido {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
 }
 
 .form-item:not(:last-of-type) {
@@ -172,13 +190,14 @@ input[type='password'] {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
+    color: white;
 }
 
 .formulario .button {
     margin-top: 2rem;
 }
 
-.noticias .buttons {
+.noticia .buttons {
     display: flex;
     justify-content: space-evenly;
 }
@@ -188,7 +207,8 @@ input[type='password'] {
 }
 
 .button-blue {
-    background-color: dodgerblue;
+    background-color: darkslategrey;
+
 }
 
 .button-red {
@@ -222,15 +242,57 @@ input[type='password'] {
     border-radius: 5px;
 }
 
-.usuarios p {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
+.usuario:first-of-type {
+    margin-top: 1rem;
 }
+
+
 
 .usuario:not(:last-of-type) {
     margin-bottom: 2rem;
 }
+
+.usuario_completo {
+    margin-top: 1rem;
+}
+
+.usuario-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.usuario_completo .usuario-info {
+    padding: .5rem;
+}
+
+.usuario_completo :not(:last-of-type) {
+    margin-bottom: .5rem;
+}
+
+.usuario_completo .usuario-info:nth-child(even) {
+    background-color: darkslategrey;
+    color: white;
+}
+
+.usuario_completo input[type=submit] {
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+.usuario_enunciado {
+    display: block;
+    width: 10rem;
+    text-align: center;
+}
+
+.usuario-form {
+    margin-top: 1rem;
+}
+
+.usuario-form input[type=submit] {
+    margin-top: 1rem;
+    margin-left: 10rem;
+}
+
 
 

@@ -20,7 +20,7 @@
 <?php include '../compartido/cabecera.php' ?>
 
 <main class="global-wrapper-row">
-    <form action='<?php $_SERVER['PHP_SELF']?>' method='post' class='forma-noticia'>
+    <form action='<?php $_SERVER['PHP_SELF']?>' method='post' class='formulario'>
         <div class='form-item'>
             <label for='titulo'>Titulo: </label><br>
             <input required type='text' name='titulo' id='titulo' maxlength="500">

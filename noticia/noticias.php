@@ -13,7 +13,7 @@
     <aside class="usuarios">
         <?php include '../usuario/list_usuarios.php' ?>
     </aside>
-    <main class="noticias">
+    <main class="main">
         <?php include 'list_noticias.php' ?>
     </main>
 </div>

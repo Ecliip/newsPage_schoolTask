@@ -10,9 +10,9 @@
 <?php include '../compartido/cabecera.php' ?>
 
 <div class="global-wrapper-row">
-    <aside class="usuarios">
+    <div>
         <?php include 'list_usuarios.php'?>
-    </aside>
+    </div>
 </div>
 
 </body>

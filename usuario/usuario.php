@@ -24,38 +24,38 @@ $sql = "select * from `usuarios` where `id` = '$_GET[id]'";
         <?php
         foreach($conn->query($sql) as $row) {
             echo "<div class='usuario_completo'>
-                <p>
+                <div class='usuario-info'>
                     <span class='usuario_enunciado'>Nombre: </span> 
                     <span class='usuario_data'>". $row['nombre'] ."</span>
-                </p>
-                <p>
+                </div>
+                <div class='usuario-info'>
                     <span class='usuario_enunciado'>Email: </span> 
                     <span class='usuario_data'>". $row['email'] ."</span>
-                </p>
-                <p>
+                </div>
+                <div class='usuario-info'>
                     <span class='usuario_enunciado'>Edad: </span> 
                     <span class='usuario_data'>". $row['edad'] ."</span>
-                </p>
-                <p>
+                </div>
+                <div class='usuario-info'>
                     <span class='usuario_enunciado'>Fecha de nacimiento: </span> 
                     <span class='usuario_data'>". $row['f_nacimiento'] ."</span>
-                </p>
-                <p>
+                </div>
+                <div class='usuario-info'>
                     <span class='usuario_enunciado'>Dirección: </span> 
                     <span class='usuario_data'>". $row['direccion'] ."</span>
-                </p>
-                <p>
+                </div>
+                <div class='usuario-info'>
                     <span class='usuario_enunciado'>Código postal: </span> 
                     <span class='usuario_data'>". $row['c_postal'] ."</span>
-                </p>
-                <p>
-                    <span class='usuario_enunciado'>Nombre: </span> 
+                </div>
+                <div class='usuario-info'>
+                    <span class='usuario_enunciado'>Provincia: </span> 
                     <span class='usuario_data'>". $row['provincia'] ."</span>
-                </p>
-                <p>
-                    <span class='usuario_enunciado'>Nombre: </span> 
+                </div>
+                <div class='usuario-info'>
+                    <span class='usuario_enunciado'>Género: </span> 
                     <span class='usuario_data'>". $row['genero'] ."</span>
-                </p>";
+                </div>";
 
             if (isset($_SESSION['nombre'])) {
                echo "<form action='?id=" . $row['id'] . "&redactar=true' method='post'>
@@ -67,7 +67,7 @@ $sql = "select * from `usuarios` where `id` = '$_GET[id]'";
 
             if(isset($_GET['redactar'])) {
                 foreach($conn->query($sql) as $row) {
-                    echo "<form action='modificar.php?id=". $row['id'] ."' method='post' class='forma-noticia'>
+                    echo "<form action='modificar.php?id=". $row['id'] ."' method='post' class='formulario'>
                         <div class='form-item'>
                 <label for='nombre'>Nombre: </label><br>
                 <input required type='text' name='nombre' id='nombre' maxlength='40' value='". $row['nombre'] ."'>

@@ -9,8 +9,8 @@
 
 <?php include 'compartido/cabecera.php' ?>
 
-<div class="usuario-view">
-    <form method="GET" action="/ilerna/usuario/auth.php">
+<div class="global-wrapper-row">
+    <form method="GET" action="/ilerna/usuario/auth.php" class="formulario">
         <div class="form-item">
             <label for="email">Email: </label><br>
             <input type="email" name="email" id="email" onkeyup="getEmail(this.value)">
