@@ -69,21 +69,25 @@ li:not(:last-of-type) {
 
 body {
     background-color: #dae2d9;
+    height: 100%;
 }
 
 .global-wrapper-row {
+    height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
 }
 
 .global-wrapper-col {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .usuarios {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     background-color: darkseagreen;
